@@ -1,0 +1,10 @@
+---
+# tasks file for openssh
+- name: set default openssh_secured value
+  set_fact:
+    openssh_secured: true
+  when: openssh_secured is not defined
+
+- include: secure-ssh.yml
+  when: openssh_secured | bool
+

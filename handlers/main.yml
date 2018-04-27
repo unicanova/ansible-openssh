@@ -1,0 +1,5 @@
+---
+# handlers file for openssh
+
+- name: Restart ssh
+  service: name=ssh state=restarted
