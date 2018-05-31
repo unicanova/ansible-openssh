@@ -23,8 +23,7 @@ $ git clone https://github.com/unicanova/ansible-openssh
 $ cd ansible-openssh
 ```
 Specify host addresses in the file /etc/ansible/hosts.  
-Create a [site.yml](#Ex3) file, where you can specify the users you need to add.  
-In the playbook site.yml you can override varibales according to the [table](#Table1), if necessary.  
+Create a [site.yml](#Ex3) file, which should contain only the title of the role.  
 
 Execute command:  
 
